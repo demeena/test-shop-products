@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#">Каталог</a>
+              <ul>
+                <li><a id="snacks-link" href="#">Чипсы/Снеки</a></li>
+                <li><a id="freezing-link" href="#">Замороженные продукты</a></li>
+                <li><a  id="sweet-link" href="#">Сладости</a></li>
+                <li><a id="drink-link" href="#">Напитки</a></li>
+                <li><a id="milk-link" href="#">Молочные продукты</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      
+    <div class="shop">
+      <div class="product hidden" id="snacks-product-1">
+        <h2>Чипсы lays сыр</h2>
+        <img src="img/lays.png" width="100px" height="100px">
+        <p>140 гр <span class="price">180 ₽</span></p>
+        <button onclick="addToBasket(1)">Купить</button>
+      </div>
+      
+
+      <div class="product hidden" id="snacks-product-2">
+        <h2>Гренки ржано-пшеничные Фишка чесночные</h2>
+        <img src="img/fiska.png" width="100px" height="100px">
+        <p>120 гр <span class="price">64 ₽</span></p>
+        <button onclick="addToBasket(2)">Купить</button>
+      </div>
+
+      <div class="product hidden" id="snacks-product-3">
+        <h2>Попкорн Holy Corn с морской солью</h2>
+        <img src="img/pop.png" width="100px" height="100px">
+        <p>65 гр <span class="price">95 ₽</span></p>
+        <button onclick="addToBasket(3)">Купить</button>
+      </div>
+
+      <div class="product hidden" id="snacks-product-4">
+        <h2> Tuc Крекеры сметана и лук</h2>
+        <img src="img/tuc.png" width="100px" height="100px">
+        <p>100 гр <span class="price">77 ₽</span></p>
+        <button onclick="addToBasket(4)">Купить</button>
+      </div>
+
+      <div class="product hidden" id="snacks-product-5">
+        <h2> Хлебцы пшеничные Wasa Sesame с кунжутом</h2>
+        <img src="img/pheny.png" width="100px" height="100px">
+        <p>200 гр <span class="price">250 ₽</span></p>
+        <button onclick="addToBasket(5)">Купить</button>
+      </div>
+
+      <div class="product hidden" id="snacks-product-6">
+        <h2> Чипсы Pringles сметана и лук </h2>
+        <img src="img/pringles.png" width="100px" height="100px">
+        <p>165 гр <span class="price">300 ₽</span></p>
+        <button onclick="addToBasket(6)">Купить</button>
+      </div>
+
+
+
+
+      <div class="product hidden " id="freezing-product-1">
+        <h2>Пицца trattoria пеперони</h2>
+        <img src="img/pizza.png" width="100px" height="100px">
+        <p>335 гр <span class="price">301  ₽</span></p>
+        <button onclick="addToBasket(7)">Купить</button>
+      </div>
+
+    <div class="product hidden"id="freezing-product-2">
+      <h2>Котлеты куриные Троекурово</h2>
+      <img src="img/troekurovo.png" width="100px" height="100px">
+      <p> 500 гр <span class="price">162 ₽</span></p>
+      <button onclick="addToBasket(8)">Купить</button>
+    </div>
+
+
+    <div class="product hidden" id="freezing-product-3">
+      <h2> Пельмени Сибирская коллекция</h2>
+      <img src="img/pelmeni.png" width="100px" height="100px">
+      <p> 700 гр <span class="price">683 ₽</span></p>
+      <button onclick="addToBasket(9)">Купить</button>
+    </div>
+
+
+
+    <div class="product hidden" id="freezing-product-4">
+      <h2>Креветки Polar </h2>
+      <img src="img/krevet.png" width="100px" height="100px">
+      <p> 1 кг <span class="price">900 ₽</span></p>
+      <button onclick="addToBasket(10)">Купить</button>
+    </div>
+
+    <div class="product hidden" id="freezing-product-5">
+      <h2>Овощи-гриль Мираторг </h2>
+      <img src="img/grilsmes.png" width="100px" height="100px">
+      <p> 400 гр <span class="price"> 167 ₽</span></p>
+      <button onclick="addToBasket(11)">Купить</button>
+    </div>
+
+    <div class="product hidden" id="freezing-product-6">
+      <h2>Тесто Хлебный Дом слоеное бездрожжевое х 2 шт  </h2>
+      <img src="img/testo.png" width="100px" height="100px">
+      <p> 500 гр <span class="price"> 218 ₽</span></p>
+      <button onclick="addToBasket(12)">Купить</button>
+    </div>
+
+
+
+
+
+  <div class="product hidden" id="sweet-product-1">
+        <h2>Вафли Акульчев Венские с земляникой </h2>
+        <img src="img/vafli.png" width="100px" height="100px">
+        <p> 100 гр <span class="price">70 ₽</span></p>
+        <button onclick="addToBasket(13)">Купить</button>
+    </div>
+
+    <div class="product hidden" id="sweet-product-2">
+      <h2>Драже M&M's с арахисом </h2>
+      <img src="img/mm.png" width="100px" height="100px">
+      <p> 145 гр <span class="price">174 ₽</span></p>
+      <button onclick="addToBasket(14)">Купить</button>
+  </div>
+
+  <div class="product hidden" id="sweet-product-3">
+    <h2>Шоколадные конфеты Ferrero Rocher  </h2>
+    <img src="img/ferero.png" width="100px" height="100px">
+    <p> 212 гр <span class="price"> 700 ₽</span></p>
+    <button onclick="addToBasket(15)">Купить</button>
+</div>
+
+<div class="product hidden" id="sweet-product-4">
+  <h2>Шоколад Россия - щедрая душа </h2>
+  <img src="img/россия.png" width="100px" height="100px">
+  <p> 80 гр <span class="price"> 60 ₽</span></p>
+  <button onclick="addToBasket(16)">Купить</button>
+</div>
+
+<div class="product hidden" id="sweet-product-5">
+  <h2> Шоколадное яйцо Kinder Сюрприз </h2>
+  <img src="img/киндер.png" width="100px" height="100px">
+  <p> 20 гр <span class="price"> 100 ₽</span></p>
+  <button onclick="addToBasket(17)">Купить</button>
+</div>
+
+<div class="product hidden" id="sweet-product-6">
+  <h2>  Kinder Chocolate молочный со злаками </h2>
+  <img src="img/киндеркантри.png" width="100px" height="100px">
+  <p> 23,5 гр <span class="price"> 54 ₽</span></p>
+  <button onclick="addToBasket(18)">Купить</button>
+</div>
+
+<div class="product hidden" id="sweet-product-7">
+  <h2> Печенье Яшкино сдобное вишня </h2>
+  <img src="img/яшкиновишня.png" width="100px" height="100px">
+  <p>137 гр <span class="price"> 76 ₽</span></p>
+  <button onclick="addToBasket(19)">Купить</button>
+</div>
+
+<div class="product hidden" id="sweet-product-8">
+  <h2> Печенье Milka с кусочками молочного шоколада </h2>
+  <img src="img/милкакукис.png" width="100px" height="100px">
+  <p>168 гр <span class="price"> 217 ₽</span></p>
+  <button onclick="addToBasket(20)">Купить</button>
+</div>
+
+<div class="product hidden" id="sweet-product-9">
+  <h2> Торт Фили-Бейкер Панчо бисквитный</h2>
+  <img src="img/панчо.png" width="100px" height="100px">
+  <p>1 кг <span class="price"> 800 ₽</span></p>
+  <button onclick="addToBasket(21)">Купить</button>
+</div>
+
+
+    <div class="product hidden" id="drink-product-1">
+        <h2>Напиток черноголовка без сахара кола</h2>
+        <img src="img/cola.png" width="100px" height="100px">
+        <p>2 литра <span class="price">150 ₽</span></p>
+        <button onclick="addToBasket(22)">Купить</button>
+    </div>
+
+    <div class="product hidden" id="drink-product-2">
+      <h2>Напиток Добрый лимон-лайм </h2>
+      <img src="img/спрайт.png" width="100px" height="100px">
+      <p> 1,5литра <span class="price">90 ₽</span></p>
+      <button onclick="addToBasket(23)">Купить</button>
+  </div>
+
+  <div class="product hidden" id="drink-product-3">
+    <h2> Газированный напиток Dr.Pepper </h2>
+    <img src="img/пепер.png" width="100px" height="100px">
+    <p> 0,33 литра <span class="price">92 ₽</span></p>
+    <button onclick="addToBasket(24)">Купить</button>
+</div>
+
+
+<div class="product hidden" id="milk-product-1">
+  <h2> Йогурт Epica киви-фейхоа</h2>
+  <img src="img/епика.png" width="100px" height="100px">
+  <p> 130 гр <span class="price">57 ₽</span></p>
+  <button onclick="addToBasket(25)">Купить</button>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <form class="zakaz"action="https://formspree.io/f/xvonwped"
+  method="POST" >
+          <div class="basket">
+            <h2 style="text-align: center;">Корзина</h2>
+            <ul id="basket-items"></ul>
+            <h3 style="text-align: center;">Total price: <span id="total">0</span></h3>
+          </div>
+          <label for="">
+            Ваше имя:
+            <input type="text" name="name" id="name" placeholder="Иванов Иван" required pattern="[А-Яа-яЁё]{2,}"  title="Имя должно быть на русском и состоять из букв Пример: Иван">
+          </label>
+          
+          <label >
+            email:
+            <input type="email" name="email" id="email" placeholder="ivanov@ivan.ru" required >
+          </label>
+          <label for="">
+            <input type="tel"id="phone" name="phone" required pattern="\+7\d{10}"  placeholder="+79211111111"/>
+          </label>
+          <label for="">
+            <label for="address">Адресс:
+            <input type="text" id="address" name="address"  placeholder="г.Москва ул. Калашникова д2 кв 2"required>
+          </label>
+          <label for="deliveryTime">Время доставки:</label>
+            <select id="deliveryTime" name="deliveryTime">
+              <option value="12-14">12:00 - 14:00</option>
+              <option value="14-18">14:00 - 18:00</option>
+              <option value="18-22">18:00 - 22:00</option>
+            </select>
+
+          <input type="hidden" name="order-details" id="order-details">
+          <input type="hidden" name="total-price" id="total-price">
+          <input class="ofo" type="submit" value="Оформить заказ">
+  </form>
+  
+</body>
+
+<script src="script.js"></script>
+</html>
